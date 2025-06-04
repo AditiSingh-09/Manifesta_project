@@ -1,5 +1,5 @@
 const app = require('./app');
-const PORT = process.env.DB_PORT5000;
+const PORT = process.env.DB_PORT || 5000;
 const pool = require('./db');
 
 // Test the database connection when the server starts
@@ -13,7 +13,7 @@ pool.query('SELECT NOW()', (err, res) => {
   
 
 app.listen(PORT, () =>{
-    console.log("Server has started on port ${PORT}")
+    console.log(`Server has started on port ${PORT}`)
 
 });
 
