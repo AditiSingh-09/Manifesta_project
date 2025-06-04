@@ -5,7 +5,7 @@ const pool = require("./db");
 
 //middleware
 app.use(cors({
-  origin: 'https://manifesta-project.vercel.app/',
+  origin: 'https://manifesta-project.vercel.app',
   credentials: true,
 }));
 app.use(express.json());
