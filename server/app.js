@@ -10,6 +10,10 @@ app.use(cors({
 }));
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
+});
+
 // Route Middleware
 app.use('/users', require('./routes/users'));
 app.use('/clubs', require('./routes/clubs'));
