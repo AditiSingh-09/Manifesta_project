@@ -1,6 +1,6 @@
 // // api.js
 
-// const BASE_URL = "http://localhost:5000"; // Replace with your backend's URL
+// const BASE_URL = "http://localhost:5000";
 
 // // Function to get all events
 // export const getAllEvents = async () => {
@@ -90,7 +90,7 @@
 
 import axios from "axios";
 
-const BASE_URL = "https://manifesta-project-1.onrender.com"; // Replace with your backend's URL
+const BASE_URL = "https://manifesta-project-1.onrender.com";
 
 // Function to get all clubs
 export const getAllClubs = async () => {
